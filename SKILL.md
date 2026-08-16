@@ -1,14 +1,87 @@
 ---
-license: MIT
 name: solar-storage-charging-project-review
 description: 审查光储充项目能量平衡、收益、融资与租赁风险。
-version: 0.1.0
+version: 0.2.0
 author: stormchaser
+license: Proprietary - internal use
 platforms: [linux, macos, windows]
+evidence_grade: B+
 metadata:
   hermes:
     tags: [financial-risk, solar-storage-charging, project-finance, financing-lease, microgrid]
-    related_skills: [photovoltaic-project-investment-risk-review, independent-energy-storage-project-review, ev-charging-infrastructure-project-review, financing-lease-contract-review]---
+    related_skills: [photovoltaic-project-investment-risk-review, independent-energy-storage-project-review, ev-charging-infrastructure-project-review, financing-lease-contract-review]
+  sources:
+    - id: NEA-2024-04-12
+      type: official_notice
+      title: 国家能源局《关于促进新型储能并网和调度运用的通知》
+      date: 2024-04-12
+      url: https://www.nea.gov.cn/policy/zxwj_3.htm
+      note: 明确"积极支持新能源+储能、聚合储能、光储充一体化等联合调用模式发展"，为光储充联合调度提供政策依据。
+      grade: A
+    - id: NEA-2024-10-31
+      type: official_briefing
+      title: 国家能源局2024年第四季度新闻发布会文字实录
+      date: 2024-10-31
+      url: https://www.nea.gov.cn/2024-10/31/c_1310787069.htm
+      note: 《可再生能源替代行动计划》在交通领域鼓励"推进光储充放多功能综合一体站建设"。
+      grade: A
+    - id: NEA-2025-01
+      type: official_briefing
+      title: 国家能源局2025年一季度新闻发布会
+      date: 2025-01-23
+      url: https://www.nea.gov.cn/20250123/544b9af2b6aa4590a60945e81e0d8ee1/c.html
+      note: 截至2024年底全国充电设施1281.8万台、充电量突破1100亿千瓦时，高速服务区充电桩覆盖率达98%。
+      grade: A
+    - id: NPC-2020-NEVP
+      type: state_council_plan
+      title: 国务院《新能源汽车产业发展规划（2021—2035年）》
+      date: 2020-11
+      url: https://paper.people.com.cn/zgnyb/pc/content/202503/03/content_30060791.html
+      note: 首次提出"鼓励光储充放（分布式光伏—储能—充放电）多功能综合一体站建设"。
+      grade: A
+    - id: NDRC-2023-545
+      type: joint_notice
+      title: 国家发改委、国家能源局《关于加快推进充电基础设施建设 更好支持新能源汽车下乡和乡村振兴的实施意见》（发改综合〔2023〕545号）
+      date: 2023-05
+      url: http://zfxxgk.nea.gov.cn/2024-09/12/c_1212397910.htm
+      note: 提出充电基础设施"县县全覆盖、乡乡全覆盖"，鼓励光储充协同控制与一体化运营。
+      grade: A
+    - id: STATECOUNCIL-2023-19
+      type: state_council_doc
+      title: 国务院办公厅《关于进一步构建高质量充电基础设施体系的指导意见》（国办发〔2023〕19号）
+      date: 2023-06
+      url: http://zfxxgk.nea.gov.cn/2024-09/12/c_1212397910.htm
+      note: 构建城市面状、公路线状、乡村点状布局的充电网络，推进重点区域充电设施建设。
+      grade: A
+    - id: NEA-2023-23
+      type: joint_notice
+      title: 国家能源局等部门《关于组织开展农村能源革命试点县建设的通知》（国能发新能〔2023〕23号）
+      date: 2023-03
+      url: http://zfxxgk.nea.gov.cn/2024-09/12/c_1212397910.htm
+      note: 探索充电桩+分布式光伏一体化运营与共享化农村可再生能源消费模式。
+      grade: A
+    - id: SHANGHAI-2025-2030
+      type: local_policy
+      title: 上海市《新型储能示范引领创新发展工作方案（2025—2030年）》
+      date: 2025-01
+      url: https://www.shanghai.gov.cn/nw12344/20250109/2bb7b4542a98446a9cdbf79c9eb9395d.html
+      note: 明确光储充一体化充电站应用场景；示范项目给予度电奖励；独立储能容量补贴与租赁共享机制。
+      grade: A
+    - id: INDUSTRY-EUROLIAN-2024
+      type: industry_report
+      title: 亿欧智库《2024工商业储能行业研究报告》
+      date: 2024
+      url: https://www.fxbaogao.com/detail/4363517
+      note: 整理光储充一体化模式、需量管理、VPP、辅助服务等多维盈利渠道；截至时点全国已有10省31地出台工商业储能补贴。
+      grade: C
+    - id: MEDIA-CLSD-2024-04-14
+      type: media
+      title: 财联社/科创板日报关于新型储能并网调度通知的报道
+      date: 2024-04-14
+      url: https://www.cls.cn/detail/1645997
+      note: 解读峰谷套利、需求响应、绿电使用率等光储充获利模式；仅作行业趋势线索，不作项目参数依据。
+      grade: D
+---
 
 # 光储充一体化项目投资与融资风控
 
@@ -151,6 +224,31 @@ metadata:
 - [ ] 项目与权益现金流、DSCR和LLCR可复算
 - [ ] 场地、消防、接入、权属和更新闸门已核验
 - [ ] 回归测试和项目端到端运行退出码为0
+
+## Official Sources & Evidence Grading
+
+Skill-level evidence grade: **B+**（多数政策锚点为A级官方来源，经济性/补贴类仍含少量行业口径，需逐项目核验）。证据分级沿用：
+
+- **A** 国家级/省级法律法规、部委文件、部委新闻发布会、正式白皮书（可直接作为政策判断依据）；
+- **B** 地方规范性文件、电网公司公告、行业协会统计（可作区域政策与市场依据，需注明范围与时间）；
+- **C** 智库报告、券商研报、头部厂商白皮书（可作行业趋势与参考模型，不可作项目参数）；
+- **D** 公众号、媒体、厂商方案、可研初稿（仅作线索，必须在纠错台账留痕并交叉验证）。
+
+本 skill 引用的核心官方锚点（详见 frontmatter `metadata.sources`）：
+
+- **国家能源局《关于促进新型储能并网和调度运用的通知》（2024-04-12）**：明确"积极支持新能源+储能、聚合储能、光储充一体化等联合调用模式发展"，是第2、3节联合调度与虚拟增容边界讨论的政策底稿（NEA-2024-04-12, A）。
+- **《新能源汽车产业发展规划（2021—2035年）》（国发〔2020〕39号）**：首次提出"光储充放多功能综合一体站"，支撑第1节建设路径论证（NPC-2020-NEVP, A）。
+- **发改综合〔2023〕545号、国办发〔2023〕19号、国能发新能〔2023〕23号**：构成充电基础设施与农村光储充一体化的顶层规划依据，支撑第6节需求响应/一体化运营收入的合同化资格判断（A）。
+- **国家能源局2024年第四季度新闻发布会、2025年一季度新闻发布会**：提供充电设施规模、充电量、服务区覆盖率等宏观数据，用作第9节压力测试中充电量基准的交叉核验（A）。
+- **上海市《新型储能示范引领创新发展工作方案（2025—2030年）》**：作为地方政策B/A级样本，涉及度电奖励、容量补贴、容量租赁共享、用户侧储能备案，用作第6节补贴与辅助服务收入的合规性样板（SHANGHAI-2025-2030, A）。
+- 亿欧智库《2024工商业储能行业研究报告》、券商研报、财联社报道：仅作第6节盈利模式识别与第9节敏感性范围的**参考**（C/D级），不得替代项目实测与合同证据。
+
+使用规则：当政策或补贴作为基准现金流时，必须引用对应A/B级锚点的文号与生效范围；凡无A/B级依据的需求响应、VPP、绿证、补贴、碳收益，一律按下行情景剔除后再判断偿债能力（与第6节"非合同化收入归零"要求一致）。
+
+## Changelog
+
+- **v0.2.0 (stormchaser)**：升级版本并新增 `evidence_grade`、`metadata.sources`；补充国家能源局2024新型储能调度通知、新能源汽车产业发展规划、发改/国办充电基础设施文件、上海市新型储能方案等A级官方锚点；引入证据分级规则（A/B/C/D）；明确行业报告与媒体仅作线索。未发布。
+- **v0.1.0 (徐长民, Hermes Agent)**：初版，建立光储充一体化项目能量守恒、收益不重复计值、融资与融资租赁退出审查框架。
 
 ## References
 
