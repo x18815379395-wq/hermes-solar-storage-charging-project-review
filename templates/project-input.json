@@ -1,0 +1,74 @@
+{
+  "project": {
+    "name": "光储充年度审计示例（参数须由项目证据替换）",
+    "projection_years": 15,
+    "site_term_years": 20,
+    "discount_rate": 0.08,
+    "tax_rate": 0.25,
+    "total_capex": 4200000,
+    "depreciation_years": 15,
+    "load_data_verified": false
+  },
+  "pv": {
+    "capacity_kw": 500,
+    "equivalent_hours": 1200,
+    "annual_degradation": 0.005,
+    "availability": 0.99,
+    "curtailment_rate": 0.01,
+    "direct_to_charging_share": 0.65,
+    "to_storage_share": 0.20,
+    "export_price": 0.25,
+    "om_per_kw_year": 35
+  },
+  "storage": {
+    "power_kw": 300,
+    "capacity_kwh": 600,
+    "depth_of_discharge": 0.90,
+    "roundtrip_efficiency": 0.88,
+    "cycles_per_year": 300,
+    "annual_capacity_degradation": 0.02,
+    "availability": 0.97,
+    "allow_grid_charging": true,
+    "offpeak_grid_price": 0.35,
+    "om_per_kwh_year": 25
+  },
+  "charging": {
+    "stall_count": 12,
+    "rated_power_total_kw": 720,
+    "online_rate": 0.97,
+    "average_power_realization": 0.35,
+    "base_daily_kwh_per_stall": 120,
+    "demand_multiplier_by_year": [1, 1.10, 1.20, 1.30, 1.40, 1.40, 1.40, 1.40, 1.40, 1.40, 1.25, 1.10, 0.95, 0.85, 0.75],
+    "customer_energy_price": 0.75,
+    "service_fee": 0.30,
+    "direct_grid_price": 0.72,
+    "platform_fee_rate_on_service": 0.10,
+    "variable_opex_per_kwh": 0.015,
+    "fixed_om_year": 50000
+  },
+  "other_costs": {
+    "site_rent_year": 86400,
+    "basic_demand_charge_year": 48000,
+    "insurance_and_other_year": 30000,
+    "annual_cost_growth": 0.02
+  },
+  "ancillary": {
+    "verified": false,
+    "annual_revenue": 0
+  },
+  "replacements": [
+    {"year": 8, "amount": 300000, "item": "逆变器及充电模块更新"},
+    {"year": 10, "amount": 700000, "item": "储能电芯补容/更换"}
+  ],
+  "debt": {
+    "debt_ratio": 0.60,
+    "annual_interest_rate": 0.045,
+    "tenor_years": 8,
+    "dscr_threshold": 1.20
+  },
+  "scenarios": {
+    "p90": {"pv_factor": 0.90, "charging_demand_factor": 0.90, "service_fee_factor": 1.0, "grid_price_factor": 1.0},
+    "downside": {"pv_factor": 0.85, "charging_demand_factor": 0.80, "service_fee_factor": 0.90, "grid_price_factor": 1.10},
+    "severe": {"pv_factor": 0.75, "charging_demand_factor": 0.65, "service_fee_factor": 0.80, "grid_price_factor": 1.20}
+  }
+}
