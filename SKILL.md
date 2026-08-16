@@ -3,7 +3,7 @@ license: MIT
 name: solar-storage-charging-project-review
 description: 审查光储充项目能量平衡、收益、融资与租赁风险。
 version: 0.1.0
-author: Hermes Agent Contributor
+author: stormchaser
 platforms: [linux, macos, windows]
 metadata:
   hermes:
